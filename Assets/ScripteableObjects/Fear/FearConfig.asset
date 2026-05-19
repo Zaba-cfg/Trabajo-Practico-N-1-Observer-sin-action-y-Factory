@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d07f38fcb5b2d994f983a8065d3e312e, type: 3}
+  m_Name: FearConfig
+  m_EditorClassIdentifier: Assembly-CSharp::FearConfigSO
+  <VisualSettings>k__BackingField:
+  - MinFear: 0
+    MaxFear: 25
+    LightColor: {r: 1, g: 1, b: 1, a: 0}
+    LightIntensity: 1
+  - MinFear: 25
+    MaxFear: 50
+    LightColor: {r: 1, g: 1, b: 1, a: 0}
+    LightIntensity: 0.6
+  - MinFear: 50
+    MaxFear: 75
+    LightColor: {r: 1, g: 1, b: 1, a: 0}
+    LightIntensity: 0.3
+  - MinFear: 75
+    MaxFear: 100
+    LightColor: {r: 1, g: 1, b: 1, a: 0}
+    LightIntensity: 0.05

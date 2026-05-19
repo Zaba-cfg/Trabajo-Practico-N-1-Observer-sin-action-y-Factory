@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469a5cd89c35cb1499ca6a3bb2107c96, type: 3}
+  m_Name: SpawnTable3
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnTableSO
+  <MinFearLevel>k__BackingField: 50
+  <MaxFearLevel>k__BackingField: 75
+  <SpawnInterval>k__BackingField: 15
+  <MonstersPerWave>k__BackingField: 5
+  <SpawnEntries>k__BackingField:
+  - MonsterData: {fileID: 11400000, guid: bb87a1b2db212974cb707b327133c1a3, type: 2}
+    SpawnWeight: 0

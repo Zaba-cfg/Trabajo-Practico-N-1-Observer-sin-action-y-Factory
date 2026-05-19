@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dfadb448ec4e9c449f3257be0c0053e, type: 3}
+  m_Name: AudioConfig
+  m_EditorClassIdentifier: Assembly-CSharp::AudioConfigSO
+  <AudioSettings>k__BackingField:
+  - MinFear: 0
+    MaxFear: 25
+    MusicVolume: 0.05
+    Pitch: 1
+  - MinFear: 25
+    MaxFear: 50
+    MusicVolume: 0.15
+    Pitch: 1.1
+  - MinFear: 50
+    MaxFear: 75
+    MusicVolume: 0.3
+    Pitch: 1.15
+  - MinFear: 75
+    MaxFear: 100
+    MusicVolume: 1
+    Pitch: 1.25

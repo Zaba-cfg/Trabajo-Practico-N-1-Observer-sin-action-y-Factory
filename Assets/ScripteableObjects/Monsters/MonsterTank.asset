@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0e5beb9ef8ac449a43ab1dd3974d8c, type: 3}
+  m_Name: MonsterTank
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterDataSO
+  <MonsterName>k__BackingField: Tank
+  <MaxHealth>k__BackingField: 150
+  <MoveSpeed>k__BackingField: 0.5
+  <Damage>k__BackingField: 10
+  <Prefab>k__BackingField: {fileID: 5936267772222431749, guid: 3cc65420cfcb81c4591e66814e1c8907, type: 3}
+  <DeathSound>k__BackingField: {fileID: 8300000, guid: 7ada07c7bc756f84a8bc6cc806b279a6, type: 3}
+  <Icon>k__BackingField: {fileID: -2237934906713710296, guid: fbc2b086b7f27c64bbc64a2d391cb56f, type: 3}
