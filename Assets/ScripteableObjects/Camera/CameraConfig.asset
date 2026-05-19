@@ -15,17 +15,17 @@ MonoBehaviour:
   <CameraSettings>k__BackingField:
   - MinFear: 0
     MaxFear: 25
-    ShakeIntensity: 25
+    ShakeIntensity: 0
     Zoom: 0
   - MinFear: 25
     MaxFear: 50
-    ShakeIntensity: 50
+    ShakeIntensity: 0.05
     Zoom: 0.25
   - MinFear: 50
     MaxFear: 75
-    ShakeIntensity: 75
+    ShakeIntensity: 0.15
     Zoom: 0.5
   - MinFear: 75
     MaxFear: 100
-    ShakeIntensity: 100
+    ShakeIntensity: 0.3
     Zoom: 0.75

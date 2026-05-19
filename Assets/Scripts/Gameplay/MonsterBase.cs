@@ -71,6 +71,8 @@ public class MonsterBase : MonoBehaviour
         {
             return;
         }
+        
+        player.TakeDamage(damage);
     }
     
     private void PlayDeathSound()
