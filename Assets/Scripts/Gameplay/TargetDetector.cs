@@ -3,7 +3,6 @@ using UnityEngine;
 public class TargetDetector : MonoBehaviour
 {
     [SerializeField] private float detectionRadius = 10f;
-
     [SerializeField] private LayerMask monsterLayer;
 
     public MonsterBase GetClosestTarget()

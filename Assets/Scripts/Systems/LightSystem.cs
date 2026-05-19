@@ -4,7 +4,6 @@ using UnityEngine.Rendering.Universal;
 public class LightSystem : MonoBehaviour, IFearSystemObserver
 {
     [SerializeField] private Light2D globalLight;
-
     [SerializeField] private FearConfigSO fearConfig;
 
     public void OnFearChanged(float fearLevel)

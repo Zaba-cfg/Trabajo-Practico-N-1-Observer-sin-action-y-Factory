@@ -4,10 +4,7 @@ using UnityEngine;
 public class CameraFearData
 {
     public float MinFear;
-
     public float MaxFear;
-
     public float ShakeIntensity;
-
     public float Zoom;
 }

@@ -3,15 +3,10 @@ using UnityEngine;
 public class AutomaticShooter : MonoBehaviour
 {
     [SerializeField] private Projectile projectilePrefab;
-
     [SerializeField] private Transform shootPoint;
-
     [SerializeField] private TargetDetector targetDetector;
-
     [SerializeField] private float fireRate = 0.5f;
-
     [SerializeField] private float projectileDamage = 10f;
-
     [SerializeField] private float projectileSpeed = 10f;
 
     private float shootTimer;

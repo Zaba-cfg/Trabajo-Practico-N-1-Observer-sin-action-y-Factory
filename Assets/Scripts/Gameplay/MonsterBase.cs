@@ -5,18 +5,12 @@ public class MonsterBase : MonoBehaviour
     [SerializeField] protected SpriteRenderer spriteRenderer;
     
     protected float currentHealth;
-
     protected float moveSpeed;
-
     protected float damage;
-
     protected Transform target;
-
     protected MonsterDataSO monsterData;
 
-    public virtual void Initialize(
-        MonsterDataSO data,
-        Transform targetTransform)
+    public virtual void Initialize(MonsterDataSO data, Transform targetTransform)
     {
         monsterData = data;
 

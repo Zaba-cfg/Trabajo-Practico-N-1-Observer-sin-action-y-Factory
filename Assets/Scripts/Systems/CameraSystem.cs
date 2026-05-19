@@ -3,13 +3,10 @@ using UnityEngine;
 public class CameraSystem : MonoBehaviour, IFearSystemObserver
 {
     [SerializeField] private Camera mainCamera;
-
     [SerializeField] private CameraConfigSO cameraConfig;
-
     [SerializeField] private float baseOrthographicSize = 5f;
 
     private Vector3 originalPosition;
-
     private float currentShakeIntensity;
 
     private void Start()

@@ -5,9 +5,7 @@ using UnityEngine.UI;
 public class FearSliderUI : MonoBehaviour
 {
     [SerializeField] private Slider fearSlider;
-
     [SerializeField] private TMP_Text fearValueText;
-
     [SerializeField] private FearManager fearManager;
 
     private void Start()

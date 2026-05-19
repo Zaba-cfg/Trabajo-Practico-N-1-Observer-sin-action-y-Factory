@@ -3,7 +3,6 @@ using UnityEngine;
 public class SoundSystem : MonoBehaviour, IFearSystemObserver
 {
     [SerializeField] private AudioSource musicSource;
-
     [SerializeField] private AudioConfigSO audioConfig;
 
     public void OnFearChanged(float fearLevel)

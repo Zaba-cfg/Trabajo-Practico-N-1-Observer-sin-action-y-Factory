@@ -3,9 +3,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     private MonsterBase target;
-
     private float damage;
-
     private float speed;
 
     public void Initialize(
