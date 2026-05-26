@@ -5,14 +5,12 @@ public class LightSystem : MonoBehaviour, IFearSystemObserver
 {
     [Header("References")]
     [SerializeField] private Light2D globalLight;
-
     [SerializeField] private FearConfigSO fearConfig;
 
     [Header("Transition")]
     [SerializeField] private float transitionSpeed = 5f;
 
     private Color targetColor;
-
     private float targetIntensity;
 
     private void Update()
@@ -22,8 +20,7 @@ public class LightSystem : MonoBehaviour, IFearSystemObserver
 
     public void OnFearChanged(float fearLevel)
     {
-        FearVisualData data =
-            GetFearVisualData(fearLevel);
+        FearVisualData data = GetFearVisualData(fearLevel);
 
         if (data == null)
         {
@@ -31,7 +28,7 @@ public class LightSystem : MonoBehaviour, IFearSystemObserver
         }
 
         targetColor = data.LightColor;
-
+        
         targetIntensity = data.LightIntensity;
     }
 
@@ -50,16 +47,11 @@ public class LightSystem : MonoBehaviour, IFearSystemObserver
         );
     }
 
-    private FearVisualData GetFearVisualData(
-        float fearLevel)
+    private FearVisualData GetFearVisualData(float fearLevel)
     {
-        foreach (FearVisualData data
-                 in fearConfig.FearVisuals)
+        foreach (FearVisualData data in fearConfig.FearVisuals)
         {
-            if (
-                fearLevel >= data.MinFear &&
-                fearLevel <= data.MaxFear
-            )
+            if (fearLevel >= data.MinFear && fearLevel <= data.MaxFear)
             {
                 return data;
             }

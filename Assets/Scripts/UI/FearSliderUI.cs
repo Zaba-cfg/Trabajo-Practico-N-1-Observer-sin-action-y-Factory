@@ -11,7 +11,6 @@ public class FearSliderUI : MonoBehaviour
     private void Start()
     {
         fearSlider.onValueChanged.AddListener(OnSliderValueChanged);
-
         OnSliderValueChanged(fearSlider.value);
     }
 

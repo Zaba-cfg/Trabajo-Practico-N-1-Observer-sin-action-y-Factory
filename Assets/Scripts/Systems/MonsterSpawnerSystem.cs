@@ -14,8 +14,7 @@ public class MonsterSpawnerSystem : MonoBehaviour, IFearSystemObserver
 
     public void OnFearChanged(float fearLevel)
     {
-        SpawnTableSO newTable =
-            GetSpawnTable(fearLevel);
+        SpawnTableSO newTable = GetSpawnTable(fearLevel);
 
         if (newTable == currentSpawnTable)
         {
@@ -46,9 +45,7 @@ public class MonsterSpawnerSystem : MonoBehaviour, IFearSystemObserver
         {
             SpawnWave();
 
-            yield return new WaitForSeconds(
-                currentSpawnTable.SpawnInterval
-            );
+            yield return new WaitForSeconds(currentSpawnTable.SpawnInterval);
         }
     }
 
@@ -56,23 +53,17 @@ public class MonsterSpawnerSystem : MonoBehaviour, IFearSystemObserver
     {
         for (int i = 0; i < currentSpawnTable.MonstersPerWave; i++)
         {
-            MonsterDataSO monsterData =
-                GetRandomMonster();
+            MonsterDataSO monsterData = GetRandomMonster();
 
-            Vector2 spawnPosition =
-                GetSpawnPosition();
+            Vector2 spawnPosition = GetSpawnPosition();
 
-            monsterFactory.CreateMonster(
-                monsterData,
-                spawnPosition
-            );
+            monsterFactory.CreateMonster(monsterData, spawnPosition);
         }
     }
 
     private MonsterDataSO GetRandomMonster()
     {
-        List<SpawnEntry> entries =
-            currentSpawnTable.SpawnEntries;
+        List<SpawnEntry> entries = currentSpawnTable.SpawnEntries;
 
         float totalWeight = 0f;
 
@@ -81,8 +72,7 @@ public class MonsterSpawnerSystem : MonoBehaviour, IFearSystemObserver
             totalWeight += entry.SpawnWeight;
         }
 
-        float randomValue =
-            Random.Range(0f, totalWeight);
+        float randomValue = Random.Range(0f, totalWeight);
 
         float currentWeight = 0f;
 
@@ -101,21 +91,16 @@ public class MonsterSpawnerSystem : MonoBehaviour, IFearSystemObserver
 
     private Vector2 GetSpawnPosition()
     {
-        Vector2 randomDirection =
-            Random.insideUnitCircle.normalized;
+        Vector2 randomDirection = Random.insideUnitCircle.normalized;
 
-        return (Vector2)player.position +
-               randomDirection * spawnRadius;
+        return (Vector2)player.position + randomDirection * spawnRadius;
     }
 
     private SpawnTableSO GetSpawnTable(float fearLevel)
     {
         foreach (SpawnTableSO table in spawnTables)
         {
-            if (
-                fearLevel >= table.MinFearLevel &&
-                fearLevel <= table.MaxFearLevel
-            )
+            if (fearLevel >= table.MinFearLevel && fearLevel <= table.MaxFearLevel)
             {
                 return table;
             }

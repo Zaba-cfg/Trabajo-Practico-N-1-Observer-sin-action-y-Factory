@@ -32,11 +32,9 @@ public class MonsterBase : MonoBehaviour
 
     protected virtual void MoveToTarget()
     {
-        Vector2 direction =
-            (target.position - transform.position).normalized;
+        Vector2 direction = (target.position - transform.position).normalized;
 
-        transform.position +=
-            (Vector3)(direction * moveSpeed * Time.deltaTime);
+        transform.position += (Vector3)(direction * moveSpeed * Time.deltaTime);
     }
 
     public virtual void TakeDamage(float damageAmount)
@@ -58,8 +56,7 @@ public class MonsterBase : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        PlayerHealth player =
-            collision.gameObject.GetComponent<PlayerHealth>();
+        PlayerHealth player = collision.gameObject.GetComponent<PlayerHealth>();
 
         if (player == null)
         {
@@ -76,21 +73,19 @@ public class MonsterBase : MonoBehaviour
             return;
         }
 
-        GameObject tempAudioObject =
-            new GameObject("TempDeathAudio");
+        GameObject tempAudioObject = new GameObject("TempDeathAudio");
 
-        tempAudioObject.transform.position =
-            transform.position;
+        tempAudioObject.transform.position = transform.position;
 
-        AudioSource audioSource =
-            tempAudioObject.AddComponent<AudioSource>();
+        AudioSource audioSource = tempAudioObject.AddComponent<AudioSource>();
 
         audioSource.clip = monsterData.DeathSound;
 
         audioSource.spatialBlend = 0f;
+        
+        audioSource.volume = 0.5f;
 
-        audioSource.pitch =
-            Random.Range(0.8f, 1.2f);
+        audioSource.pitch = Random.Range(0.8f, 1.2f);
 
         audioSource.Play();
 

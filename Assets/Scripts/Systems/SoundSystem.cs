@@ -4,16 +4,13 @@ public class SoundSystem : MonoBehaviour, IFearSystemObserver
 {
     [Header("References")]
     [SerializeField] private AudioSource musicSource;
-
     [SerializeField] private AudioConfigSO audioConfig;
 
     [Header("Transition")]
     [SerializeField] private float volumeTransitionSpeed = 3f;
-
     [SerializeField] private float pitchTransitionSpeed = 3f;
 
     private float targetVolume;
-
     private float targetPitch = 1f;
 
     private void Update()
@@ -23,8 +20,7 @@ public class SoundSystem : MonoBehaviour, IFearSystemObserver
 
     public void OnFearChanged(float fearLevel)
     {
-        AudioFearData data =
-            GetAudioFearData(fearLevel);
+        AudioFearData data = GetAudioFearData(fearLevel);
 
         if (data == null)
         {
@@ -53,16 +49,11 @@ public class SoundSystem : MonoBehaviour, IFearSystemObserver
             );
     }
 
-    private AudioFearData GetAudioFearData(
-        float fearLevel)
+    private AudioFearData GetAudioFearData(float fearLevel)
     {
-        foreach (AudioFearData data
-                 in audioConfig.AudioFearData)
+        foreach (AudioFearData data in audioConfig.AudioFearData)
         {
-            if (
-                fearLevel >= data.MinFear &&
-                fearLevel <= data.MaxFear
-            )
+            if (fearLevel >= data.MinFear && fearLevel <= data.MaxFear)
             {
                 return data;
             }
