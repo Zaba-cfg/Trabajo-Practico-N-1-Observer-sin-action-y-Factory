@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnTableSO
   <MinFearLevel>k__BackingField: 25
   <MaxFearLevel>k__BackingField: 50
-  <SpawnInterval>k__BackingField: 5
-  <MonstersPerWave>k__BackingField: 3
+  <SpawnInterval>k__BackingField: 2
+  <MonstersPerWave>k__BackingField: 4
   <SpawnEntries>k__BackingField:
   - MonsterData: {fileID: 11400000, guid: 4bc270a0ec3304e4185211e88e481c05, type: 2}
-    SpawnWeight: 0
+    SpawnWeight: 70
+  - MonsterData: {fileID: 11400000, guid: 5e3d1c1c49b4d824f94fe75e98b246a2, type: 2}
+    SpawnWeight: 30

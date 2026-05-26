@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MonsterDataSO
   <MonsterName>k__BackingField: Fast
   <MaxHealth>k__BackingField: 40
-  <MoveSpeed>k__BackingField: 5
+  <MoveSpeed>k__BackingField: 6
   <Damage>k__BackingField: 10
   <Prefab>k__BackingField: {fileID: 5936267772222431749, guid: 3cc65420cfcb81c4591e66814e1c8907, type: 3}
   <DeathSound>k__BackingField: {fileID: 8300000, guid: 7ada07c7bc756f84a8bc6cc806b279a6, type: 3}
-  <Icon>k__BackingField: {fileID: 460611315080368574, guid: 55ec35f3428f33244bfe07a3aaae8d17, type: 3}
+  <Icon>k__BackingField: {fileID: -5838744345638087809, guid: b15564df6f3de5d448ce787dd96ff27f, type: 3}
