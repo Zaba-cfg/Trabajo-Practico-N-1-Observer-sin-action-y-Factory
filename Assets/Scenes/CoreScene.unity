@@ -313,8 +313,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f42123b941ba4474bac283f03673985f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraSystem
-  mainCamera: {fileID: 519420031}
+  targetCamera: {fileID: 519420031}
   cameraConfig: {fileID: 11400000, guid: 0ad6ae99e3eeace46b2c6a99c3878c9b, type: 2}
+  zoomTransitionSpeed: 5
+  shakeTransitionSpeed: 5
   baseOrthographicSize: 10
 --- !u!1 &345493216
 GameObject:
@@ -387,7 +389,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 36, y: 36}
+  m_Size: {x: 80, y: 80}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1031,6 +1033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LightSystem
   globalLight: {fileID: 619394801}
   fearConfig: {fileID: 11400000, guid: 463ba66acda728742a12f419bf0b1742, type: 2}
+  transitionSpeed: 5
 --- !u!1001 &1325769932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1185,6 +1188,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SoundSystem
   musicSource: {fileID: 1369703384}
   audioConfig: {fileID: 11400000, guid: e1ed84b2cb712e6459158d3521408445, type: 2}
+  volumeTransitionSpeed: 3
+  pitchTransitionSpeed: 3
 --- !u!82 &1369703384
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1198,7 +1203,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: bfe17a12dc0ad6f48822166572f7023b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0

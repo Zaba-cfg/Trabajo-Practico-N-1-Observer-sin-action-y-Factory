@@ -1,10 +1,10 @@
 using UnityEngine;
 
 [System.Serializable]
-public class FearAudioData
+public class AudioFearData
 {
     public float MinFear;
     public float MaxFear;
     public float MusicVolume;
-    public float Pitch;
+    public float MusicPitch;
 }

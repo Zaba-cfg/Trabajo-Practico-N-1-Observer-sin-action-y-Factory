@@ -12,20 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0d34771e5d3a0d48ad7d9d8ec4e7a83, type: 3}
   m_Name: CameraConfig
   m_EditorClassIdentifier: Assembly-CSharp::CameraConfigSO
-  <CameraSettings>k__BackingField:
+  CameraFearData:
   - MinFear: 0
     MaxFear: 25
+    ZoomOffset: 0
     ShakeIntensity: 0
-    Zoom: 0
   - MinFear: 25
     MaxFear: 50
-    ShakeIntensity: 0.05
-    Zoom: 0.25
+    ZoomOffset: 0.5
+    ShakeIntensity: 0.1
   - MinFear: 50
     MaxFear: 75
+    ZoomOffset: 1
     ShakeIntensity: 0.15
-    Zoom: 0.5
   - MinFear: 75
     MaxFear: 100
+    ZoomOffset: 2
     ShakeIntensity: 0.3
-    Zoom: 0.75

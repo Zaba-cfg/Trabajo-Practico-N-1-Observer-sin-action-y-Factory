@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d07f38fcb5b2d994f983a8065d3e312e, type: 3}
   m_Name: FearConfig
   m_EditorClassIdentifier: Assembly-CSharp::FearConfigSO
-  <VisualSettings>k__BackingField:
+  FearVisuals:
   - MinFear: 0
     MaxFear: 25
     LightColor: {r: 1, g: 1, b: 1, a: 0}
@@ -20,12 +20,12 @@ MonoBehaviour:
   - MinFear: 25
     MaxFear: 50
     LightColor: {r: 1, g: 1, b: 1, a: 0}
-    LightIntensity: 0.6
+    LightIntensity: 0.8
   - MinFear: 50
     MaxFear: 75
     LightColor: {r: 1, g: 1, b: 1, a: 0}
-    LightIntensity: 0.3
+    LightIntensity: 0.6
   - MinFear: 75
     MaxFear: 100
     LightColor: {r: 1, g: 1, b: 1, a: 0}
-    LightIntensity: 0.05
+    LightIntensity: 0.3
